@@ -48,10 +48,14 @@
         <p>
           {% assign author_list = "" %}
           {% assign authors = post.authors | split: ", " %}
+          {% assign has_equal_contribution = false %}
           {% for author in authors %}
             {% assign author = author | strip %}
             {% if author == "David Anugraha" %}
               {% capture formatted_author %}<u>{{ author }}</u>{% endcapture %}
+            {% elsif author == "David Anugraha*" %}
+              {% capture formatted_author %}<u>{{ author }}</u>{% endcapture %}
+              {% assign has_equal_contribution = true %}
             {% else %}
               {% capture formatted_author %}{{ author }}{% endcapture %}
             {% endif %}
@@ -66,6 +70,11 @@
           <br>
           <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%b %Y" }}
         </p>
+
+        {% if has_equal_contribution %}
+          <p><em>Note: Authors marked with * contributed equally.</em></p>
+        {% endif %}
+
         {% elsif post.date %}
          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
         {% endif %}

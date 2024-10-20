@@ -279,13 +279,13 @@ defaults:
       type: "talks"
     values:
       layout: "archive"
-      permalink: /talks-services/
+      permalink: /talks/
   - scope:
       path: ""
       type: "services"
     values:
       layout: "archive"
-      permalink: /talks-services/
+      permalink: /services/
 
 
 # Sass/SCSS

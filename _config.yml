@@ -24,7 +24,7 @@ author:
   avatar           : "my_picture.png"
   name             : "David Anugraha"
   pronouns         : # example: "she/her"  
-  bio              : "Computer Scientist, Statistician, and Chemist!"
+  bio              : #"Computer Scientist, Statistician, and Chemist!"
   location         : # "Earth"
   employer         : # "Red Brick University"
   uri              : # URL

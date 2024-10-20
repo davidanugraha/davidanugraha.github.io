@@ -276,11 +276,16 @@ defaults:
   # _talks
   - scope:
       path: ""
-      type: talks
+      type: "talks"
     values:
-      layout: talk
-      author_profile: true
-      share: true
+      layout: "archive"
+      permalink: /talks-services/
+  - scope:
+      path: ""
+      type: "services"
+    values:
+      layout: "archive"
+      permalink: /talks-services/
 
 
 # Sass/SCSS

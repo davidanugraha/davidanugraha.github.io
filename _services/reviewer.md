@@ -1,5 +1,7 @@
 ---
-title: "Reviewer for ICLR (2025)"
+title: "Reviewer"
 collection: services
 type: reviewer
+titles:
+  - "ICLR (2025)"
 ---

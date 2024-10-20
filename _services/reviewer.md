@@ -1,4 +1,5 @@
 ---
-title: "Reviewer for ICLR 2025"
+title: "Reviewer for ICLR (2025)"
 collection: services
+type: reviewer
 ---

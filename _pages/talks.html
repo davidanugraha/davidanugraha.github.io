@@ -1,9 +1,11 @@
 ---
 layout: archive
-title: "Talks and Presentations"
-permalink: /talks/
+title: "Talks & Services"
+permalink: /talks-services/
 author_profile: true
 ---
+
+<h2>Talks</h2>
 
 {% if site.talkmap_link == true %}
 
@@ -13,4 +15,10 @@ author_profile: true
 
 {% for post in site.talks reversed %}
   {% include archive-single-talk.html %}
+{% endfor %}
+
+<h2>Professional Services</h2>
+
+{% for post in site.services reversed %}
+  {% include archive-single-service.html %}
 {% endfor %}

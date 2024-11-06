@@ -46,6 +46,10 @@
           <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif post.collection == 'publications' %}
         <p>
+          {% if post.note %}
+            <p class="archive__item-note"><strong>{{ post.note }}</strong></p>
+          {% endif %}
+
           {% assign author_list = "" %}
           {% assign authors = post.authors | split: ", " %}
           {% assign has_equal_contribution = false %}

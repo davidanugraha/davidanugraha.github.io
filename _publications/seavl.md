@@ -2,7 +2,7 @@
 title: "Crowdsource, Crawl, or Generate? Creating SEA-VL, a Multicultural Vision-Language Dataset for Southeast Asia"
 collection: publications
 category: conferences
-date: 2025-10-18
+date: 2025-03-10
 authors: Samuel Cahyawijaya, Holy Lovenia, Joel Ruben Antony Moniz, Tack Hwa Wong, Mohammad Rifqi Farhansyah, Thant Thiri Maung, Frederikus Hudi, David Anugraha, and 84 other authors.
 venue: ACL 2025
 paperurl: 'https://arxiv.org/pdf/2503.07920'

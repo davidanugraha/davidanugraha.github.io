@@ -1,5 +1,5 @@
 ---
-title: "mR3: Robust Rubric-Agnostic Reward Models"
+title: "mR3: Multilingual Rubric-Agnostic Reward Reasoning Models"
 collection: publications
 category: conferences
 date: 2025-10-01

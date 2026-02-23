@@ -1,0 +1,523 @@
+/* ==========================================================================
+   DARK MODE
+   ========================================================================== */
+
+html[data-theme="dark"] {
+
+  /* --- Base --- */
+  body {
+    color: #e4e4e4;
+    background-color: #1a1a1a;
+  }
+
+  a {
+    color: #7cc5d9;
+
+    &:visited {
+      color: #9ad0e0;
+    }
+
+    &:hover,
+    &:active {
+      color: #a8dae8;
+    }
+  }
+
+  /* --- Masthead --- */
+  .masthead {
+    background: #1a1a1a;
+    border-bottom-color: #333333;
+  }
+
+  .greedy-nav {
+    background: #1a1a1a;
+
+    a {
+      color: #c0c0c0;
+
+      &:hover {
+        color: #e4e4e4;
+      }
+    }
+
+    button {
+      background-color: #444444;
+    }
+
+    .hidden-links {
+      background: #242424;
+      border-color: #333333;
+
+      &::before {
+        border-color: #333333 transparent;
+      }
+
+      &::after {
+        border-color: #242424 transparent;
+      }
+
+      a {
+        color: #c0c0c0;
+
+        &:hover {
+          color: #e4e4e4;
+          background: #333333;
+        }
+      }
+
+      li {
+        border-bottom-color: #333333;
+      }
+    }
+  }
+
+  /* --- Sidebar --- */
+  .sidebar {
+    background: #1a1a1a;
+  }
+
+  .author__avatar img {
+    border-color: #333333;
+  }
+
+  .author__bio {
+    color: #b0b0b0;
+  }
+
+  .author__urls-wrapper button {
+    background-color: #3a3a3a;
+    color: #e4e4e4;
+    border-color: #444444;
+
+    &:hover {
+      background-color: #444444;
+    }
+  }
+
+  .author__urls {
+    background: #242424;
+    border-color: #333333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+    a {
+      color: #c0c0c0;
+
+      &:hover {
+        color: #7cc5d9;
+      }
+    }
+  }
+
+  /* --- Content Area --- */
+  .page__content {
+    color: #e4e4e4;
+
+    h1, h2, h3, h4, h5, h6 {
+      color: #f0f0f0;
+    }
+
+    p, li {
+      color: #d0d0d0;
+    }
+
+    blockquote {
+      border-left-color: #7cc5d9;
+      color: #b0b0b0;
+    }
+  }
+
+  /* --- Archive / Publication Lists --- */
+  .archive__subtitle {
+    color: #999999;
+    border-bottom-color: #333333;
+  }
+
+  .archive__item-title a {
+    color: #7cc5d9;
+  }
+
+  .archive__item-excerpt {
+    color: #b0b0b0;
+  }
+
+  /* --- Navigation / TOC --- */
+  .toc {
+    background-color: #242424;
+    border-color: #333333;
+
+    .nav__title {
+      background: #3a3a3a;
+    }
+  }
+
+  .toc__menu a {
+    color: #999999;
+    border-bottom-color: #333333;
+
+    &:hover {
+      color: #e4e4e4;
+      background: #333333;
+    }
+  }
+
+  .nav__list a {
+    color: #c0c0c0;
+  }
+
+  .nav__sub-title {
+    border-bottom-color: #333333;
+    color: #999999;
+  }
+
+  .pagination a {
+    color: #999999;
+    border-color: #333333;
+
+    &:hover {
+      color: #7cc5d9;
+    }
+
+    &.current {
+      background: #444444;
+      color: #e4e4e4;
+    }
+  }
+
+  .pagination--pager {
+    color: #999999;
+    border-color: #333333;
+
+    &:hover {
+      color: #7cc5d9;
+    }
+  }
+
+  /* --- Code --- */
+  pre,
+  code,
+  kbd,
+  samp {
+    background: #2a2a2a;
+    border-color: #333333;
+    color: #e4e4e4;
+  }
+
+  p > code,
+  a > code,
+  li > code,
+  figcaption > code,
+  td > code {
+    background: #2a2a2a;
+    border-color: #333333;
+    color: #e4e4e4;
+  }
+
+  /* --- Tables --- */
+  table {
+    background-color: #1a1a1a;
+    color: #e4e4e4;
+  }
+
+  thead {
+    background-color: #242424;
+    color: #e4e4e4;
+  }
+
+  tbody tr:nth-child(even) {
+    background-color: #222222;
+  }
+
+  td, th {
+    border-color: #333333;
+  }
+
+  /* --- Footer --- */
+  .page__footer {
+    background: #111111;
+    color: #888888;
+
+    a {
+      color: #7cc5d9;
+    }
+  }
+
+  .page__footer-copyright {
+    color: #666666;
+  }
+
+  /* --- Breadcrumbs --- */
+  .breadcrumbs {
+    color: #999999;
+
+    a {
+      color: #7cc5d9;
+    }
+  }
+
+  /* --- Forms --- */
+  input,
+  textarea,
+  select {
+    background-color: #2a2a2a;
+    color: #e4e4e4;
+    border-color: #444444;
+
+    &:focus {
+      border-color: #7cc5d9;
+    }
+  }
+
+  /* --- Notices --- */
+  .notice,
+  .notice--primary,
+  .notice--info,
+  .notice--warning,
+  .notice--danger,
+  .notice--success {
+    background-color: #242424;
+  }
+
+  /* --- Magnific Popup --- */
+  .mfp-bg {
+    background: rgba(0, 0, 0, 0.85);
+  }
+
+  /* --- Dark Mode Toggle Button --- */
+  .dark-mode-btn {
+    background: transparent;
+    border: 1.5px solid #555555;
+    color: #e4e4e4;
+    cursor: pointer;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+    padding: 0;
+
+    &:hover {
+      border-color: #f9d71c;
+      color: #f9d71c;
+      background: rgba(249, 215, 28, 0.1);
+    }
+  }
+}
+
+/* --- Dark Mode Toggle (Light mode styles) --- */
+.dark-mode-btn {
+  background: transparent;
+  border: 1.5px solid #cccccc;
+  color: #555555;
+  cursor: pointer;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+  padding: 0;
+  outline: none;
+  flex-shrink: 0;
+
+  &:hover {
+    border-color: #7a8288;
+    color: #1a1a1a;
+    background: rgba(0, 0, 0, 0.06);
+  }
+}
+
+/* --- Masthead Controls (dark mode toggle + easter egg) --- */
+.masthead__controls {
+  position: absolute;
+  right: 52px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  z-index: 25;
+
+  @media (min-width: 925px) {
+    right: 16px;
+  }
+}
+
+/* --- Easter Egg Button --- */
+.fun-egg-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #7a8288;
+  font-size: 0.85rem;
+  opacity: 0;
+  transition: opacity 0.4s ease, transform 0.3s ease;
+  padding: 0 0 0 6px;
+  outline: none;
+  line-height: 1;
+  vertical-align: middle;
+
+  &:hover {
+    opacity: 0.7;
+    transform: rotate(-12deg) scale(1.25);
+  }
+}
+
+html[data-theme="dark"] .fun-egg-btn {
+  color: #888888;
+}
+
+/* --- Fun Modal --- */
+.fun-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  backdrop-filter: blur(4px);
+  animation: funModalFadeIn 0.25s ease;
+}
+
+@keyframes funModalFadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.fun-modal {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 2rem 2.2rem 2rem;
+  max-width: 540px;
+  width: 100%;
+  max-height: 85vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+  animation: funModalSlideIn 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  @media (max-width: 600px) {
+    padding: 1.5rem 1.4rem;
+  }
+}
+
+@keyframes funModalSlideIn {
+  from { transform: translateY(30px) scale(0.95); opacity: 0; }
+  to   { transform: translateY(0) scale(1); opacity: 1; }
+}
+
+html[data-theme="dark"] .fun-modal {
+  background: #1e1e1e;
+  color: #e4e4e4;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+}
+
+.fun-modal__close {
+  position: absolute;
+  top: 1rem;
+  right: 1.1rem;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #7a8288;
+  line-height: 1;
+  padding: 0;
+  transition: color 0.2s;
+
+  &:hover {
+    color: #1a1a1a;
+  }
+}
+
+html[data-theme="dark"] .fun-modal__close:hover {
+  color: #e4e4e4;
+}
+
+.fun-modal__title {
+  margin: 0 0 0.3rem;
+  font-size: 1.55rem;
+  font-weight: 700;
+}
+
+.fun-modal__subtitle {
+  color: #7a8288;
+  margin: 0 0 1.5rem;
+  font-size: 0.92rem;
+}
+
+html[data-theme="dark"] .fun-modal__subtitle {
+  color: #888888;
+}
+
+.fun-modal__section {
+  margin-bottom: 1.3rem;
+  padding: 1rem 1.1rem;
+  background: #f7f7f7;
+  border-radius: 10px;
+  border-left: 4px solid #52adc8;
+
+  h3 {
+    margin: 0 0 0.4rem;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  p {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.55;
+    color: #555555;
+  }
+}
+
+html[data-theme="dark"] .fun-modal__section {
+  background: #2a2a2a;
+
+  p {
+    color: #b0b0b0;
+  }
+}
+
+.fun-modal__section--reflective {
+  border-left-color: #c9964a;
+  background: #fdf8f2;
+  font-style: italic;
+
+  h3 {
+    font-style: normal;
+  }
+
+  p {
+    color: #6b5a44;
+  }
+}
+
+html[data-theme="dark"] .fun-modal__section--reflective {
+  background: #2a2418;
+  border-left-color: #c9964a;
+
+  p {
+    color: #c4aa84;
+  }
+}
+
+.fun-modal__footer {
+  margin-top: 1.4rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e8e8e8;
+  font-size: 0.82rem;
+  color: #999999;
+  text-align: center;
+}
+
+html[data-theme="dark"] .fun-modal__footer {
+  border-top-color: #333333;
+  color: #666666;
+}

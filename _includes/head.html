@@ -13,6 +13,11 @@
 
 <script>
   document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  // Apply saved theme immediately to prevent flash of wrong theme
+  (function() {
+    var t = localStorage.getItem('theme');
+    if (t === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+  })();
 </script>
 
 <!-- For all browsers -->

@@ -5,6 +5,8 @@
 html[data-theme="dark"] {
 
   /* --- Base --- */
+  background-color: #1a1a1a; /* prevent white html bleed-through near footer */
+
   body {
     color: #e4e4e4;
     background-color: #1a1a1a;
@@ -95,7 +97,7 @@ html[data-theme="dark"] {
   }
 
   .author__urls {
-    background: #242424;
+    background: #242424; /* mobile popup background */
     border-color: #333333;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 
@@ -105,6 +107,14 @@ html[data-theme="dark"] {
       &:hover {
         color: #7cc5d9;
       }
+    }
+  }
+
+  @media screen and (min-width: 925px) {
+    .author__urls {
+      background: transparent; /* on desktop it sits in the sidebar, no separate bg */
+      border: none;
+      box-shadow: none;
     }
   }
 
@@ -233,11 +243,23 @@ html[data-theme="dark"] {
 
   /* --- Footer --- */
   .page__footer {
-    background: #111111;
+    background-color: #1a1a1a;
+    border-top-color: #2e2e2e;
     color: #888888;
+
+    footer {
+      background-color: #1a1a1a;
+    }
 
     a {
       color: #7cc5d9;
+    }
+
+    .fas,
+    .fab,
+    .far,
+    .fal {
+      color: #888888;
     }
   }
 
